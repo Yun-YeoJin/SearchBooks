@@ -7,16 +7,14 @@ struct BookInfo {
 
 let books: [Books] = [
     
-    Books(title: "겨울왕국2", rate: 8.8, imageURL: "https://t1.daumcdn.net/movie/5afd212b68e34e61a964d969dd898e2f1574298873981"),
-    Books(title: "7번방의선물", rate: 9.2, imageURL: "https://t1.daumcdn.net/cfile/blog/23206F3C5281B4B404"),
-    Books(title: "괴물", rate: 9.7, imageURL: "https://t1.daumcdn.net/cfile/12110210A8F1224840"),
-    Books(title: "베테랑", rate: 9.5, imageURL: "https://t1.daumcdn.net/movie/097f7decd11d4a0ae39cb48eade62af63e43724d"),
-    Books(title: "아바타", rate: 9.3, imageURL: "https://upload.wikimedia.org/wikipedia/ko/thumb/c/c0/%EC%98%81%ED%99%94_%EC%95%84%EB%B0%94%ED%83%80.jpg/220px-%EC%98%81%ED%99%94_%EC%95%84%EB%B0%94%ED%83%80.jpg"),
-    Books(title: "부산행", rate: 8.1, imageURL: "https://t1.daumcdn.net/movie/38259ef0ed3416ddcc98cd0c30b6f1ad5e5f5f1d"),
-    Books(title: "명량", rate: 9.7, imageURL: "https://t1.daumcdn.net/cfile/2776AD4E53CC5FDE26"),
-    Books(title: "도둑들", rate: 9.1, imageURL: "https://t1.daumcdn.net/cfile/tistory/165FD14250147ACC29")
-//    Books(title: "택시운전사", rate: 9.4, imageURL: ""),
-//    Books(title: "태극기휘날리며", rate: 9.9, imageURL: ""),
+    Books(title: "나무", rate: 8.8, imageURL: "https://image.yes24.com/momo/TopCate0001/kepub/L_225860.jpg"),
+    Books(title: "인간", rate: 9.2, imageURL: "https://image.kyobobook.co.kr/images/book/xlarge/066/x9788932909066.jpg"),
+    Books(title: "신", rate: 9.7, imageURL: "https://i.pinimg.com/736x/c9/98/a2/c998a21c1f4f747cac9476135aecb409.jpg"),
+    Books(title: "심판", rate: 9.5, imageURL: "https://blog.kakaocdn.net/dn/oDebd/btqH8cdCqUF/U07AiA3LuYF4RtHvDJv1w0/img.png"),
+    Books(title: "카산드라의 거울", rate: 9.3, imageURL: "https://i.pinimg.com/736x/64/b3/85/64b38541e9fc99523f5f4b66b1d3e615--reading-books.jpg"),
+    Books(title: "개미", rate: 8.9, imageURL: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScHmQBBN9WeV7SILe8XUDBUN9TZebrQWh1OA&usqp=CAU"),
+    Books(title: "고양이", rate: 9.7, imageURL: "https://mblogthumb-phinf.pstatic.net/MjAyMDA1MjBfMTI2/MDAxNTg5OTMzNjMzNjAx.h3FNFNM9o5jb69C7gkohkcRYfg4vt9k4ek6q1_HiDzkg.nGEhoFDsdQot-C4fydJnf8L_qKIpou1hAI88IGEKStkg.JPEG.quattroher/1589933632745.jpg?type=w800"),
+    Books(title: "파라다이스", rate: 9.1, imageURL: "https://img.ridicdn.net/cover/111014251/large")
 
 ]
 }
