@@ -32,7 +32,10 @@ class SearchBooksCollectionViewController: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-       
+        navigationItem.title = "도서검색"
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "magnifyingglass"), style: .plain, target: self, action: #selector(magnifyingglassButtonClicked))
+        
         
         //컬렉션뷰의 셀 크기, 셀 사이 간격 등 설정
         let layout = UICollectionViewFlowLayout()
@@ -49,6 +52,22 @@ class SearchBooksCollectionViewController: UICollectionViewController {
         collectionView.collectionViewLayout = layout // 레이아웃 선언을 해줘야 동작함.
         
 }
+    
+    @objc func magnifyingglassButtonClicked() {
+     
+        //1. 스토리보드 파일
+        let sb = UIStoryboard(name: "SearchView", bundle: nil)
+        //2. 스토리보드 내에 VC
+        let vc = sb.instantiateViewController(withIdentifier: "SearchViewController") as! SearchViewController
+        //네비게이션 컨트롤러
+        let nav = UINavigationController(rootViewController: vc)
+        
+        // 뷰 컨트롤러 띄우는 옵션 설정
+        nav.modalPresentationStyle = .fullScreen
+        //3. 화면 전환(present)
+        self.present(nav, animated: true, completion: nil)
+        
+    }
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return bookList.books.count
     }
@@ -74,13 +93,17 @@ class SearchBooksCollectionViewController: UICollectionViewController {
     
     
     
-    // 셀이 선택되었을 때 - didSelectItemAt (Toast 라이브러리 사용)
+    
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
-        self.view.makeToast("\(indexPath.item)번째 셀을 선택했습니다.", duration: 1, position: .center)
-        // 1초동안, 스크린 가운데에 표시.
+        let sb = UIStoryboard(name: "SearchDetail", bundle: nil)
+
+        let vc = sb.instantiateViewController(withIdentifier: "SearchDetailViewController") as! SearchDetailViewController
+
+        self.navigationController?.pushViewController(vc, animated: true)
+       
         
     }
+    
     
     
 

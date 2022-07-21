@@ -20,6 +20,11 @@
 		AEF6850E2887D59000BABA4D /* SearchBooksCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF6850D2887D59000BABA4D /* SearchBooksCollectionViewCell.swift */; };
 		AEF685102887DCFC00BABA4D /* BookStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF6850F2887DCFC00BABA4D /* BookStruct.swift */; };
 		AEF685122887DD4400BABA4D /* BookInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF685112887DD4400BABA4D /* BookInfo.swift */; };
+		AEF6851B28891C7B00BABA4D /* SearchDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEF6851A28891C7B00BABA4D /* SearchDetail.storyboard */; };
+		AEF6851D28891C8300BABA4D /* SearchView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEF6851C28891C8300BABA4D /* SearchView.storyboard */; };
+		AEF6851F28891CAA00BABA4D /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF6851E28891CAA00BABA4D /* SearchViewController.swift */; };
+		AEF6852128891CB500BABA4D /* SearchDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF6852028891CB500BABA4D /* SearchDetailViewController.swift */; };
+		AEF685232889265D00BABA4D /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEF685222889265D00BABA4D /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +41,11 @@
 		AEF6850D2887D59000BABA4D /* SearchBooksCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBooksCollectionViewCell.swift; sourceTree = "<group>"; };
 		AEF6850F2887DCFC00BABA4D /* BookStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookStruct.swift; sourceTree = "<group>"; };
 		AEF685112887DD4400BABA4D /* BookInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookInfo.swift; sourceTree = "<group>"; };
+		AEF6851A28891C7B00BABA4D /* SearchDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchDetail.storyboard; sourceTree = "<group>"; };
+		AEF6851C28891C8300BABA4D /* SearchView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SearchView.storyboard; sourceTree = "<group>"; };
+		AEF6851E28891CAA00BABA4D /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		AEF6852028891CB500BABA4D /* SearchDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchDetailViewController.swift; sourceTree = "<group>"; };
+		AEF685222889265D00BABA4D /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +64,8 @@
 		AEF684E22887D52B00BABA4D = {
 			isa = PBXGroup;
 			children = (
+				AEF6851928891B6E00BABA4D /* SearchView */,
+				AEF6851828891B4A00BABA4D /* SearchDetail */,
 				AEF684ED2887D52C00BABA4D /* SearchBooks */,
 				AEF684EC2887D52C00BABA4D /* Products */,
 			);
@@ -84,6 +96,25 @@
 				AEF684F72887D52C00BABA4D /* SearchBooks.xcdatamodeld */,
 			);
 			path = SearchBooks;
+			sourceTree = "<group>";
+		};
+		AEF6851828891B4A00BABA4D /* SearchDetail */ = {
+			isa = PBXGroup;
+			children = (
+				AEF6851A28891C7B00BABA4D /* SearchDetail.storyboard */,
+				AEF685222889265D00BABA4D /* WebViewController.swift */,
+				AEF6852028891CB500BABA4D /* SearchDetailViewController.swift */,
+			);
+			path = SearchDetail;
+			sourceTree = "<group>";
+		};
+		AEF6851928891B6E00BABA4D /* SearchView */ = {
+			isa = PBXGroup;
+			children = (
+				AEF6851C28891C8300BABA4D /* SearchView.storyboard */,
+				AEF6851E28891CAA00BABA4D /* SearchViewController.swift */,
+			);
+			path = SearchView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,8 +184,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEF684FE2887D52E00BABA4D /* LaunchScreen.storyboard in Resources */,
+				AEF6851D28891C8300BABA4D /* SearchView.storyboard in Resources */,
 				AEF684FB2887D52E00BABA4D /* Assets.xcassets in Resources */,
 				AEF684F62887D52C00BABA4D /* Main.storyboard in Resources */,
+				AEF6851B28891C7B00BABA4D /* SearchDetail.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,10 +199,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEF685122887DD4400BABA4D /* BookInfo.swift in Sources */,
+				AEF685232889265D00BABA4D /* WebViewController.swift in Sources */,
 				AEF684F92887D52C00BABA4D /* SearchBooks.xcdatamodeld in Sources */,
 				AEF685102887DCFC00BABA4D /* BookStruct.swift in Sources */,
+				AEF6851F28891CAA00BABA4D /* SearchViewController.swift in Sources */,
 				AEF6850E2887D59000BABA4D /* SearchBooksCollectionViewCell.swift in Sources */,
 				AEF684F32887D52C00BABA4D /* ViewController.swift in Sources */,
+				AEF6852128891CB500BABA4D /* SearchDetailViewController.swift in Sources */,
 				AEF6850C2887D57C00BABA4D /* SearchBooksCollectionViewController.swift in Sources */,
 				AEF684EF2887D52C00BABA4D /* AppDelegate.swift in Sources */,
 				AEF684F12887D52C00BABA4D /* SceneDelegate.swift in Sources */,

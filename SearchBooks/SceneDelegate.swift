@@ -1,9 +1,4 @@
-//
-//  SceneDelegate.swift
-//  SearchBooks
-//
-//  Created by 윤여진 on 2022/07/20.
-//
+
 
 import UIKit
 

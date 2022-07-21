@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YCx-zX-k1w">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eit-56-qa0">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Search Books Collection View Controller-->
+        <!--Title-->
         <scene sceneID="r3M-U9-QZn">
             <objects>
                 <collectionViewController id="YCx-zX-k1w" customClass="SearchBooksCollectionViewController" customModule="SearchBooks" customModuleProvider="target" sceneMemberID="viewController">
@@ -82,8 +82,27 @@
                             <outlet property="delegate" destination="YCx-zX-k1w" id="XSe-6U-2BP"/>
                         </connections>
                     </collectionView>
+                    <navigationItem key="navigationItem" title="Title" id="IXd-us-V4K"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXh-4h-eTK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1618.840579710145" y="93.75"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="U7w-cb-OdF">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eit-56-qa0" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0PP-99-3WY">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="YCx-zX-k1w" kind="relationship" relationship="rootViewController" id="94H-gf-V12"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HOj-05-gPD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="708.69565217391312" y="93.75"/>
         </scene>
